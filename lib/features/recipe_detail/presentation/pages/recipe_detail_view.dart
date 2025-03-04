@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:recipe/core/utils/colors.dart';
-import 'package:recipe/features/common/common.dart';
-import 'package:recipe/features/recipe_detail/presentation/manager/recipe_detail_view_model.dart';
-import 'package:recipe/features/recipe_detail/presentation/pages/recipe_detail_details_view.dart';
-import 'package:recipe/features/recipe_detail/presentation/pages/recipe_detail_image_and_video.dart';
-import 'package:recipe/features/recipe_detail/presentation/pages/recipe_detail_user_view.dart';
+import 'package:recipe_app_flutter/features/recipe_detail/presentation/pages/recipe_detail_details_view.dart' show RecipeDetailDetailsView;
+import 'package:recipe_app_flutter/features/recipe_detail/presentation/pages/recipe_detail_image_and_video.dart' show RecipeDetailImageAndVideo;
+import 'package:recipe_app_flutter/features/recipe_detail/presentation/pages/recipe_detail_user_view.dart' show RecipeDetailUserView;
+import 'package:recipe_app_flutter/features/recipe_detail/presentation/pages/recipe_details_ingredients_view.dart' show RecipeDetailsIngredientsView;
+import '../../../common/presentation/widgets/recipe_app_bar.dart';
+import '../../../common/presentation/widgets/recipe_bottom_navigation_bar.dart';
+import '../../../common/presentation/widgets/recipe_icon_button_container.dart';
+import '../manager/recipe_detail_view_model.dart';
 
 class RecipeDetailView extends StatelessWidget {
   const RecipeDetailView({super.key});
@@ -36,43 +38,21 @@ class RecipeDetailView extends StatelessWidget {
             ),
           ],
         ),
-        body: CustomScrollView(
-          slivers: [
-            SliverList(
-              delegate: SliverChildListDelegate(
-                [
-                  RecipeDetailImageAndVideo(),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  RecipeDetailUserView(),
-                  SizedBox(
-                    height: 30,
-                  ),
-                  RecipeDetailDetailsView(),
-                  SizedBox(
-                    height: 30,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 40),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          "Ingredients",
-                          style: TextStyle(
-                            color: AppColors.redPinkMain,
-                            fontSize: 20,
-                            fontFamily: "Poppins",
-                            fontWeight: FontWeight.w600,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
+        body: ListView(
+          children: [
+            RecipeDetailImageAndVideo(),
+            SizedBox(
+              height: 20,
             ),
+            RecipeDetailUserView(),
+            SizedBox(
+              height: 30,
+            ),
+            RecipeDetailDetailsView(),
+            SizedBox(
+              height: 30,
+            ),
+            RecipeDetailsIngredientsView(),
           ],
         ),
         bottomNavigationBar: RecipeBottomNavigationBar(),

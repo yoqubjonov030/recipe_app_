@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:recipe/features/category_detail/data/repositories/recipe_repository.dart';
-import 'package:recipe/features/recipe_detail/data/models/recipe_detail_model.dart';
+import 'package:recipe_app_flutter/features/category_detail/data/repositories/recipe_repository.dart';
+import 'package:recipe_app_flutter/features/recipe_detail/data/models/recipe_detail_model.dart';
 
 class RecipeDetailViewModel extends ChangeNotifier {
   RecipeDetailViewModel({
