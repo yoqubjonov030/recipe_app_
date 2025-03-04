@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:recipe/core/utils/colors.dart';
-import 'package:recipe/features/common/presentation/widgets/recipe_rating.dart';
-import 'package:recipe/features/recipe_detail/presentation/pages/recipe_reviews.dart';
+import 'package:recipe_app_flutter/core/utils/colors.dart';
+import 'package:recipe_app_flutter/features/common/presentation/widgets/recipe_rating.dart';
+import 'package:recipe_app_flutter/features/recipe_detail/presentation/pages/recipe_reviews.dart' show RecipeReviews;
 
 class RecipeDetailTitleAndStats extends StatelessWidget {
   const RecipeDetailTitleAndStats({
@@ -24,7 +24,7 @@ class RecipeDetailTitleAndStats extends StatelessWidget {
         height: 150,
         padding: EdgeInsets.symmetric(horizontal: 10, vertical: 16),
         decoration: BoxDecoration(
-          color: AppColors.redPinkMain,
+          color:  AppColors.redPinkMain,
           borderRadius: BorderRadius.vertical(bottom: Radius.circular(10)),
         ),
         alignment: Alignment.bottomCenter,

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:recipe/core/utils/colors.dart';
-import 'package:recipe/features/category_detail/data/models/recipe_model.dart';
+import 'package:recipe_app_flutter/core/utils/colors.dart';
 
 class RecipeTime extends StatelessWidget {
   const RecipeTime({
@@ -22,7 +21,7 @@ class RecipeTime extends StatelessWidget {
         Text(
           "${timeRequired.toString()}min",
           style: TextStyle(
-            color: AppColors.pinkSub,
+            color:  AppColors.pinkSub,
             fontSize: 12,
           ),
         ),

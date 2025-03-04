@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:recipe/features/common/presentation/widgets/recipe_icon_button.dart';
+import 'package:recipe_app_flutter/features/common/presentation/widgets/recipe_icon_button.dart' show RecipeIconButton;
 
 import '../../../../core/utils/colors.dart';
 
@@ -33,7 +33,7 @@ class RecipeAppBar extends StatelessWidget implements PreferredSizeWidget {
       child: AppBar(
         toolbarHeight: toolbarHeight,
         leading: Align(
-          alignment: Alignment.centerLeft,
+          alignment:  Alignment.centerLeft,
           child: RecipeIconButton(
             image: "assets/icons/back-arrow.svg",
             size: const Size(25, 17),

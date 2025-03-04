@@ -1,5 +1,5 @@
-import 'package:recipe/core/client.dart';
-import 'package:recipe/features/categories/data/models/category_model.dart';
+import 'package:recipe_app_flutter/core/client.dart';
+import 'package:recipe_app_flutter/features/categories/data/models/category_model.dart';
 
 class CategoryRepository {
   CategoryRepository({required this.client});

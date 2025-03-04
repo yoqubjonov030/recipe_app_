@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:recipe/features/categories/data/models/category_model.dart';
-import 'package:recipe/features/categories/data/repositories/category_repository.dart';
+import 'package:recipe_app_flutter/features/categories/data/models/category_model.dart';
+import 'package:recipe_app_flutter/features/categories/data/repositories/category_repository.dart';
 
 class CategoriesViewModel extends ChangeNotifier {
   CategoriesViewModel({required CategoryRepository catRepo}) : _catRepo = catRepo {

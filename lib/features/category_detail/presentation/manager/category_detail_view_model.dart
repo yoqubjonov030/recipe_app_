@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:recipe/features/categories/data/models/category_model.dart';
-import 'package:recipe/features/categories/data/repositories/category_repository.dart';
-import 'package:recipe/features/category_detail/data/models/recipe_model.dart';
-import 'package:recipe/features/category_detail/data/repositories/recipe_repository.dart';
+import 'package:recipe_app_flutter/features/categories/data/models/category_model.dart';
+import 'package:recipe_app_flutter/features/categories/data/repositories/category_repository.dart';
+import 'package:recipe_app_flutter/features/category_detail/data/models/recipe_model.dart';
+import 'package:recipe_app_flutter/features/category_detail/data/repositories/recipe_repository.dart';
 
 class CategoryDetailViewModel with ChangeNotifier {
   CategoryDetailViewModel({

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:recipe/core/routing/routes.dart';
-import 'package:recipe/core/utils/colors.dart';
-import 'package:recipe/features/common/presentation/widgets/recipe_icon_button.dart';
+import 'package:recipe_app_flutter/core/routing/routes.dart';
+import 'package:recipe_app_flutter/core/utils/colors.dart';
+import 'package:recipe_app_flutter/features/common/presentation/widgets/recipe_icon_button.dart' show RecipeIconButton;
 
 class RecipeBottomNavigationBar extends StatelessWidget {
   const RecipeBottomNavigationBar({super.key});

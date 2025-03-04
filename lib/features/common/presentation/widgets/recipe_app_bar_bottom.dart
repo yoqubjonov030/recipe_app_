@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:recipe/features/category_detail/presentation/manager/category_detail_view_model.dart';
+import 'package:recipe_app_flutter/features/category_detail/presentation/manager/category_detail_view_model.dart';
 
 import 'recipe_app_bar_bottom_item.dart';
 
@@ -12,7 +12,7 @@ class RecipeAppBarBottom extends StatelessWidget implements PreferredSizeWidget 
 
   @override
   Widget build(BuildContext context) {
-    final vm = context.watch<CategoryDetailViewModel>();
+    final vm  = context.watch<CategoryDetailViewModel>();
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       child: Row(

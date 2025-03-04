@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:recipe/features/category_detail/data/models/recipe_model.dart';
-import 'package:recipe/features/category_detail/presentation/manager/category_detail_view_model.dart';
-import 'package:recipe/features/category_detail/presentation/widgets/recipe_item/recipe_item.dart';
+import 'package:recipe_app_flutter/features/category_detail/data/models/recipe_model.dart';
+import 'package:recipe_app_flutter/features/category_detail/presentation/manager/category_detail_view_model.dart';
+import 'package:recipe_app_flutter/features/category_detail/presentation/widgets/recipe_item/recipe_item.dart';
 
 class CategoryDetailViewBody extends StatelessWidget {
   const CategoryDetailViewBody({super.key});

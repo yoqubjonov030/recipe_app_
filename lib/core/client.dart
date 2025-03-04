@@ -3,7 +3,7 @@ import 'package:dio/dio.dart';
 class ApiClient {
   final Dio dio = Dio(
     BaseOptions(
-      baseUrl: 'http://192.168.0.103:8888/api/v1',
+      baseUrl: 'http://192.168.0.105:8888/api/v1',
       validateStatus: (status) => true,
     ),
   );

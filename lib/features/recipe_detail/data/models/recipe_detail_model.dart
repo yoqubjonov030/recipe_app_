@@ -1,12 +1,11 @@
-import 'package:recipe/features/recipe_detail/data/models/ingredient_model.dart';
-import 'package:recipe/features/recipe_detail/data/models/instruction_model.dart';
-import 'package:recipe/features/recipe_detail/data/models/user_model_in_recipe.dart';
+import 'package:recipe_app_flutter/features/recipe_detail/data/models/ingredient_model.dart';
+import 'package:recipe_app_flutter/features/recipe_detail/data/models/instruction_model.dart';
+import 'package:recipe_app_flutter/features/recipe_detail/data/models/user_model_in_recipe.dart' show UserModelInRecipe;
 
 class RecipeDetailModel {
   final int id, categoryId;
   final String title, description;
   final String image, videoRecipe;
-
   final int timeRequired;
   final num rating;
   final UserModelInRecipe user;

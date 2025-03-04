@@ -1,6 +1,6 @@
-import 'package:recipe/core/client.dart';
-import 'package:recipe/features/category_detail/data/models/recipe_model.dart';
-import 'package:recipe/features/recipe_detail/data/models/recipe_detail_model.dart';
+import 'package:recipe_app_flutter/core/client.dart';
+import 'package:recipe_app_flutter/features/category_detail/data/models/recipe_model.dart';
+import 'package:recipe_app_flutter/features/recipe_detail/data/models/recipe_detail_model.dart';
 
 class RecipeRepository {
   RecipeRepository({required this.client});

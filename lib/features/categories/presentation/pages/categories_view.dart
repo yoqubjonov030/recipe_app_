@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:recipe/features/categories/presentation/managers/category_view_model.dart';
-import 'package:recipe/features/common/common.dart';
+import 'package:recipe_app_flutter/features/categories/presentation/managers/category_view_model.dart';
+import 'package:recipe_app_flutter/features/common/presentation/widgets/recipe_app_bar.dart';
+import 'package:recipe_app_flutter/features/common/presentation/widgets/recipe_bottom_navigation_bar.dart';
+import 'package:recipe_app_flutter/features/common/presentation/widgets/recipe_icon_button_container.dart';
 
 import '../widgets/category_item.dart';
 
